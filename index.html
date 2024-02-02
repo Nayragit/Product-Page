@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Product Detail Page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <img id="mainImage" src="https://assets.ajio.com/medias/sys_master/root/20230624/sWnA/64966b18a9b42d15c9ddcd5b/-473Wx593H-465410816-burgundy-MODEL2.jpg" alt="Product Image">
+            <div class="thumbnail-container">
+                <img class="thumbnail" src="https://assets.ajio.com/medias/sys_master/root/20230624/sWnA/64966b18a9b42d15c9ddcd5b/-473Wx593H-465410816-burgundy-MODEL2.jpg" alt="Thumbnail 1">
+                <img class="thumbnail" src="https://assets.ajio.com/medias/sys_master/root/20230624/o3aN/649684c3eebac147fcf61b29/-473Wx593H-465410816-teal-MODEL.jpg" alt="Thumbnail 2">
+                <img class="thumbnail" src="https://assets.ajio.com/medias/sys_master/root/20231011/g5o6/6526a699ddf7791519341cdf/-473Wx593H-466697796-wine-MODEL.jpg" alt="Thumbnail 3">
+                <img class="thumbnail" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrY-vepWMEk9ys17NTBtnNtGwksqLebqMZz5zsJskicwunfCNE_pGiUsHS5FiL_uUYWiE&usqp=CAU" alt="Thumbnail 4">
+            </div>
+        </div>
+        <div class="right-section">
+            <p class="vendor-name faint-grey">Marmeto</p>
+            <h1 class="product-name">Embrace Sideboard</h1>
+            <hr class="faint-line">
+            <p class="price"><span class="bold-blue">$12999</span> <span class="discount-percentage red">35% Off</span></p>
+            <p class="compare-at-price faint-grey"><del>$19999</del></p>
+            <hr class="faint-line">
+            <p class="choose-color faint-grey">Choose a color</p>
+            <div class="color-options">
+                <div class="color-box selected" id="Yellow" style="background-color: #ECDECC;"></div>
+                <div class="color-box" id="Green" style="background-color: #BBD278;"></div>
+                <div class="color-box" id="Blue" style="background-color: #BBC1F8;"></div>
+                <div class="color-box" id="Pink" style="background-color: #FFD3F8;"></div>
+            </div>
+            <hr class="faint-line">
+            <p class="choose-size faint-grey">Choose a size</p>
+            <div class="size-options">
+                <label class="size-option">
+                    <input type="radio" name="size" value="Small" checked> Small
+                </label>
+                <label class="size-option">
+                    <input type="radio" name="size" value="Medium"> Medium
+                </label>
+                <label class="size-option">
+                    <input type="radio" name="size" value="Large"> Large
+                </label>
+                <label class="size-option">
+                    <input type="radio" name="size" value="Extra large"> Extra large
+                </label>
+                <label class="size-option">
+                    <input type="radio" name="size" value="XXL"> XXL
+                </label>
+            </div>
+            <div class="quantity-selector">
+                <button id="decrement">-</button>
+                <span id="quantity">1</span>
+                <button id="increment">+</button>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="success-message" id="successMessage"></div>
+            <hr class="faint-line">
+            <div class="product-description">
+                <p class="faint-grey">The Embrace Sideboard is a stylish wear. With a top cloth designed to provide superior protection and look great, this storage solution is both functional and attractive. It fits seamlessly into any home decor, with clean lines and a timeless look. Crafted from premium materials for a combination of style, durability, and reliability.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
